@@ -67,18 +67,18 @@
                       <img src="images/parallelogram.png" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Triangle</h2>
-                      <p class="">Area (A) = 0.5 X b X h</p>
+                      <h2 class="card-title">parallelogram</h2>
+                      <p class="">Area (A) = b X h</p>
                       <div>
-                        <input class="border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="" placeholder="b">
+                        <input class="border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="parallelogram-base" placeholder="b">
                       <span class="">cm</span>
 
-                      <input class="ml-3 border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="" placeholder="h">
+                      <input class="ml-3 border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="parallelogram-height" placeholder="h">
                       <span class="">cm</span>
                       </div>
-                      <p>Area: <span></span> </p>
+                      <p class="text-3xl">Area: <span class="font-bold" id="parallelogram-area">00</span> cm<sup>2</sup> </p>
                       <div class="card-actions">
-                        <button class="btn btn-primary w-52">Calculate</button>
+                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-52">Calculate</button>
                       </div>
                     </div>
                   </div>

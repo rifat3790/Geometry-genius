@@ -42,22 +42,24 @@ function calculateRectangleArea(){
 }
 
 
-function calculateRectangleArea(){
+function calculateParallelogramArea(){
+    
     // Get rectangle width
-    const widthField = document.getElementById('rectangle-width');
-    const widthValueString = widthField.value;
-    const widthValue = parseFloat(widthValueString);
-    // console.log(widthValue);
+    const parallelogramField = document.getElementById('parallelogram-base');
+    const baseValueString = parallelogramField.value;
+    const baseValue = parseFloat(baseValueString);
+    // console.log(baseValue);
 
-    // Get rectangle length
-    const lengthField = document.getElementById('rectangle-length');
-    const lengthValueString = lengthField.value;
-    const lengthValue = parseFloat(lengthValueString);
-    // console.log(lengthValue);
 
-    const rectangleArea = widthValue * lengthValue;
+    // Get parallelogram base
+    const heightField = document.getElementById('parallelogram-height');
+    const heightValueString = heightField.value;
+    const heightValue = parseFloat(heightValueString);
+    // console.log(heightValue);
+
+    const parallelogramArea = baseValue * heightValue;
 
     // get rectangle area span
-    const rectangleAreaSpan = document.getElementById('rectangle-area');
-    rectangleAreaSpan.innerText = rectangleArea;
+    const parallelogramAreaSpan = document.getElementById('parallelogram-area');
+    parallelogramAreaSpan.innerText = parallelogramArea;
 }
