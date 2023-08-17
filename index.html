@@ -26,15 +26,15 @@
                       <h2 class="card-title">Triangle</h2>
                       <p class="">Area (A) = 0.5 X b X h</p>
                       <div>
-                        <input class="border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="" placeholder="b">
+                        <input class="border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="tringle-base" placeholder="b">
                       <span class="">cm</span>
 
-                      <input class="ml-3 border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="" placeholder="h">
+                      <input class="ml-3 border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="triangle-height" placeholder="h">
                       <span class="">cm</span>
                       </div>
-                      <p>Area: <span></span> </p>
+                      <p class="text-3xl">Area: <span class="font-bold" id="triangle-area">00</span> cm<sup>2</sup> </p>
                       <div class="card-actions">
-                        <button class="btn btn-primary w-52">Calculate</button>
+                        <button onclick="calculateTringleArea()" class="btn btn-primary w-52">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -45,18 +45,18 @@
                       <img src="images/rectangle.png" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Triangle</h2>
-                      <p class="">Area (A) = 0.5 X b X h</p>
+                      <h2 class="card-title">Rectangle</h2>
+                      <p class="">Area (A) = w X l</p>
                       <div>
-                        <input class="border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="" placeholder="b">
+                        <input class="border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="rectangle-width" placeholder="w">
                       <span class="">cm</span>
 
-                      <input class="ml-3 border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="" placeholder="h">
+                      <input class="ml-3 border w-16 bg-gray-200 px-2 text-xl" type="number" name="" id="rectangle-length" placeholder="l">
                       <span class="">cm</span>
                       </div>
-                      <p>Area: <span></span> </p>
+                      <p class="text-3xl">Area: <span class="font-bold" id="rectangle-area">00</span> cm<sup>2</sup> </p>
                       <div class="card-actions">
-                        <button class="btn btn-primary w-52">Calculate</button>
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-52">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -91,5 +91,7 @@
             </div>
         </div>
     </main>
+
+    <script src="script/area-calculator.js"></script>
 </body>
 </html>
