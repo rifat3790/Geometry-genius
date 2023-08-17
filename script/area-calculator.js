@@ -63,3 +63,33 @@ function calculateParallelogramArea(){
     const parallelogramAreaSpan = document.getElementById('parallelogram-area');
     parallelogramAreaSpan.innerText = parallelogramArea;
 }
+
+function calculateEllipseArea(){
+    const majorRadius = getValue('ellipse-first-radius');
+    const minorRadius = getValue('ellipse-second-radius');
+    const area = 3.14159 * majorRadius * minorRadius;
+    setTextElementValueById('ellipse-area', area)
+    
+}
+
+// Get value 
+function getValue(valueId){
+    const getValueElements = document.getElementById(valueId);
+    const valueIdString = getValueElements.value;
+    const value = parseFloat(valueIdString);
+    return value;
+}
+
+// Get text
+function getText(elementId){
+    const getElements = document.getElementById(elementId);
+    const textIdString = getElements.innerText;
+    const text= parseFloat(textIdString);
+    return text;
+}
+
+// set value 
+function setTextElementValueById(elementId, newVale){
+    const textElement = document.getElementById(elementId);
+    textElement.innerText = newVale;
+}
